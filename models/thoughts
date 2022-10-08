@@ -1,0 +1,10 @@
+const { Schema, model, Types } = require ('mongoose');
+// moment for comment time
+const moment = require('moment');
+
+//using this model for both thoughts and reactions
+
+// const reactionSchema
+
+
+// const thoughtSchema
