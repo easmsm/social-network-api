@@ -1,6 +1,0 @@
-const { Schema, model, Types } = require ('mongoose');
-
-// moment for comment time
-const moment = require('moment');
-
-// const userSchema 
