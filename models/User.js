@@ -1,6 +1,4 @@
 const { Schema, model } = require ('mongoose');
-
-// moment for comment time
 const moment = require('moment');
 
 //running into errors with capitalization - this note is to remind me to look for that
@@ -43,10 +41,10 @@ const UserSchema = new Schema (
 
 
 //create user model
-const User = model('User', userSchema);
+const User = model('User', UserSchema);
 
 //count comments and replies
-userSchema.virtual('friendCount').get(function() {
+UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 });
 
